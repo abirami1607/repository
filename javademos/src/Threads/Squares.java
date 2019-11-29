@@ -1,12 +1,12 @@
 package Threads;
 
-public class Squares extends Thread {
+public class Squares implements Runnable {
 	public void squares() throws InterruptedException
 	{
 		for(int i=1;i<10;i++)
 		{
 			System.out.println("Square of"+i+"is:"+i*i);
-			Thread.sleep(10);
+			//Thread.sleep(10);
 		}
 	}
 		public void run()

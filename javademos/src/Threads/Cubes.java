@@ -1,12 +1,12 @@
 package Threads;
 
-public class Cubes extends Thread{
+public class Cubes implements Runnable{
 	public void cubes() throws InterruptedException
 	{
 		for(int i=1;i<10;i++)
 		{
 			System.out.println("Cube of"+i+"is:"+i*i*i);
-			Thread.sleep(10);
+			//Thread.sleep(10);
 		}
 	}
 		
